@@ -64,7 +64,14 @@ go version go1.10.2 darwin/amd64
 - Visual Studio Code 가 좋은 것 같습니다. 
 
 # 헬로우 월드 찍어보기
-<img width="783" height="645" src="/Image/helloworld00.png">
+<img width="1014" height="607" src="/Image/helloworld00.png">
+
+- 헬로우 월드 출력하고 50% 달성!
+```
+$ go run main.go
+
+Hello world
+```
 
 # Study Sample Code
 > .. 진행예정
