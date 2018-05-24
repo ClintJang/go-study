@@ -41,14 +41,30 @@ Go, 범용프로그래밍 언어인 Go에 대해 공부를 시작하며 만듭�
 # 설치
 - https://golang.org/doc/install
 
-## 설치 진행
+## 설치 진행 (저의 기준, Mac)
 1. 다운로드
-- https://golang.org/doc/install?download=go1.10.2.darwin-amd64.pkg
+	1. https://golang.org/doc/install 에서 전 맥용 설치를 찾아서..
+	2. 다운로드 : https://golang.org/doc/install?download=go1.10.2.darwin-amd64.pkg
 2. 실행해서 쭉쭉 진행
+<img width="621" height="438" src="/Image/install_progress01.png">
 
-3. 터미널 실행해서 테스트
+3. 터미널 실행해서 설치되었는 지 확인
+```
+$ go version
+
+go version go1.10.2 darwin/amd64
+```
 
 # 링크
 - 깃허브
   - https://github.com/golang
   - https://github.com/golang/go
+
+# 개발 Tool
+- Visual Studio Code 가 좋은 것 같습니다. 
+
+# 헬로우 월드 찍어보기
+<img width="783" height="645" src="/Image/helloworld00.png">
+
+# Study Sample Code
+> .. 진행예정
