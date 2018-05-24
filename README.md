@@ -75,3 +75,6 @@ Hello world
 
 # Study Sample Code
 > .. 진행예정
+
+1. helloworld/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/helloworld/main.go) : helloworld 출력 테스트, 환경 설정 확인이죠.
+2. 다음은?..
