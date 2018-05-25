@@ -109,6 +109,34 @@ Hello world
 > 기본부터 ..
 1. 출력부터 해볼까나..
 	- essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/essental/fmtPrint.go)
+	- result
+```
+$ go run fmtPrint.go
+
+printprintfprintln
+print-1-printf
+println
+한글
+6
+english
+日本語(にほんご)
+true
+true
+false
+false
+false
+10
+9
+10
+100
+한글english日本語(にほんご)
+한글,english,日本語(にほんご)
+경고음실행되나?
+한칸만 띄워지나?
+띄웅~
+탭      탭
+```
+2. 뭐하지..
 
 ## Normal Sample Code
 > 언제하지?
