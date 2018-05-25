@@ -16,24 +16,38 @@ Go, 범용프로그래밍 언어인 Go에 대해 공부를 시작하며 만듭�
 
 # 특징
 1. 컴파일 언어
-  - 인터프리터 언어가 아니기에 기계어 형태로 실행파일을 만들고 바로 실행
-  - 빠름!
+    - 인터프리터 언어가 아니기에 기계어 형태로 실행파일을 만들고 바로 실행
+    - 빠름!
 2. 가비지 컬렉션 (Garbage Collection) 제공
-  - 실행파일 안에 가비지 컬렉터가 메로리를 관리함. 
+    - 실행파일 안에 가비지 컬렉터가 메로리를 관리함. 
 3. 논리적 동시 처리 지원
-  - 고루틴(Gorutine)
-  - CSP (Communicating Sequenital Processes)
-  - 멀티코어 환경 지원변
+    - 고루틴(Gorutine)
+    - CSP (Communicating Sequenital Processes)
+    - 멀티코어 환경 지원변
 4. 패키지 시스템 지원
-  - 쉬운 의존성 관리
-  - go get, go install 등으로 쉽게 소스코드를 가져올 수 있음
+    - 쉬운 의존성 관리
+    - go get, go install 등으로 쉽게 소스코드를 가져올 수 있음
 5. 편리한 모듈화
 6. 규모가 크고 복잡한 프로그램 개발을 쉽게 가능하게 해줍니다.
-  - 유지보수에 용이
-7. 강타입 언어 (이 부분은 아직 공부하며 수정될 수 있음)
-  - 변수는 정적(immutable) 타입이라 타입 변경이 안됨.
-  - 스레드, Side Effect 면에서 보면 정적 타입 언어의 장점이 있음. 
-  
+    - 유지보수에 용이
+7. 강타입 언어
+	- 강타입 언어입니다. 형변환이 가능하면 약타입 언어, 가능하지 않으면 강타입 언어
+```
+// error
+var intValue int = 10
+var floatValue float32 = 1.5
+var intAddfloatValue float32 = intValue + floatValue // 형변환 가능하지 않음, 컴파일 에러 발생 
+
+invalid operation: intValue + floatValue (mismatched types int and float32)
+
+.. 
+
+// error
+fmt.Println("string" + true)
+
+cannot convert "string" (type untyped string) to type int
+```
+
 # 바로 웹에서 헬로우 월드 찍기!
 - https://play.golang.org/
 - https://golang.org/
@@ -66,15 +80,38 @@ go version go1.10.2 darwin/amd64
 # 헬로우 월드 찍어보기
 <img width="1014" height="607" src="/Image/helloworld00.png">
 
-- 헬로우 월드 출력하고 50% 달성!
+- 헬로우 월드 출력하고 시작은 반이다.. 50% 달성!
 ```
 $ go run main.go
 
 Hello world
 ```
 
-# Study Sample Code
-> .. 진행예정
+or 
 
+```
+$ go build main.go
+
+(main file이 만들어집니다. 윈도우라면 main.exe가 만들어지겠죠.)
+
+$ ./main
+
+Hello world
+```
+
+
+
+# Study Sample Code
+> 헬로우 월드를 찍었으면..
 1. helloworld/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/helloworld/main.go) : helloworld 출력 테스트, 환경 설정 확인이죠.
-2. 다음은?..
+
+## Essential Sample Code
+> 기본부터 ..
+1. 출력부터 해볼까나..
+	- essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/essental/fmtPrint.go)
+
+## Normal Sample Code
+> 언제하지?
+
+## Advanced Sample Code
+> 언제하지?
