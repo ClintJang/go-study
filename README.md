@@ -145,7 +145,7 @@ false
 ## Normal Sample Code
 > 응용을 하면?
 1. http 통신을 해서 json 데이터를 가져와 볼까?
-- normal/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/normal/jsonDecoderTest01.go)
+- normal/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/normal/jsonDecoder/jsonDecoderTest01.go)
 - result
 ```
 {211.45.60.1}
