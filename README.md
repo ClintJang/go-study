@@ -112,7 +112,7 @@ Hello world
 ## Essential Sample Code
 > 기본부터 ..
 1. 출력부터 해볼까나..
-	- essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/essental/fmtPrint.go)
+	- source : essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/essental/fmtPrint.go)
 	- result
 ```
 $ go run fmtPrint.go
@@ -145,13 +145,14 @@ false
 ## Normal Sample Code
 > 응용을 하면?
 1. http 통신을 해서 json 데이터를 가져와 볼까?
-- normal/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/normal/jsonDecoder/jsonDecoderTest01.go)
+- Test URL : http://ip.jsontest.com
+- source : normal/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/normal/jsonDecoder/jsonDecoderTest01.go)
 - result
 ```
-{211.45.60.1}
+{175.223.30.146}
 
 {
-    "ip": "211.45.60.1"
+    "ip": "175.223.30.146"
 }
 ```
 
