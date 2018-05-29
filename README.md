@@ -107,12 +107,12 @@ Hello world
 
 # Study Sample Code
 > 헬로우 월드를 찍었으면..
-1. helloworld/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/helloworld/main.go) : helloworld 출력 테스트, 환경 설정 확인이죠.
+1. source : src/helloworld/[helloworld.go](https://github.com/ClintJang/go-study/blob/master/sample/src/helloworld/helloworld.go) : helloworld 출력 테스트, 환경 설정 확인이죠.
 
 ## Essential Sample Code
 > 기본부터 ..
 1. 출력부터 해볼까나..
-	- source : essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/essental/fmtPrint.go)
+	- source : essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/print/fmtPrint.go)
 	- result
 ```
 $ go run fmtPrint.go
@@ -146,7 +146,7 @@ false
 > 응용을 하면?
 1. http 통신을 해서 json 데이터를 가져와 볼까?
 - Test URL : http://ip.jsontest.com
-- source : normal/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/normal/jsonDecoder/jsonDecoderTest01.go)
+- source : normal/jsonDecoder/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/src/normal/jsonDecoder/jsonDecoderTest01.go)
 - result
 ```
 {175.223.30.146}
