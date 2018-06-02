@@ -1,3 +1,7 @@
+[![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/ugorji/go/codec)
+[![rcard](https://goreportcard.com/badge/github.com/ugorji/go/codec?v=2)](https://goreportcard.com/report/github.com/ugorji/go/codec)
+[![License](http://img.shields.io/badge/license-mit-blue.svg?style=flat-square)](https://github.com/clintjang/go-study/blob/master/LICENSE)
+
 # GO! 공부하자!
 Go, 범용프로그래밍 언어인 Go에 대해 공부를 시작하며 만듭니다. 공부하며 내용을 업데이트 합니다. 
 
@@ -26,7 +30,8 @@ Go, 범용프로그래밍 언어인 Go에 대해 공부를 시작하며 만듭�
 
 # 언어의 만들어진 목적
 > **범용프로그래밍 언어**, 빠른 성능, 깔끔함, 간결함, 안정성, 편의성, 생산성, 쉬운 프로그래밍
-- 처음에는 C 언어를 능가하는 시스템 프로그래밍 언어를 목표로 디자인된 개발언어 이지만, 더 이상 언급되지 않고 범용 언어로 소개 되고 있습니다. 
+- 범용 언어
+    - 처음에는 C 언어를 능가하는 시스템 프로그래밍 언어를 목표로 디자인된 개발언어 이지만, 더 이상 언급되지 않고 범용 언어로 소개
 - 저수준(low-level) 프로그래밍 구조에 대한 접근을 허용하면서도 생산성을 높일 수 있는 언어
 
 # 특징
