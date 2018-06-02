@@ -150,6 +150,9 @@ Hello world
 # Study Sample Code
 > 헬로우 월드를 찍었으면..
 1. source : src/helloworld/[helloworld.go](https://github.com/ClintJang/go-study/blob/master/sample/src/helloworld/helloworld.go) : helloworld 출력 테스트, 환경 설정 확인이죠.
+2. Essential Sample Code : 기본 문법을 이해하기 위한 셈플
+3. Normal Sample Code : 기본 문법을 이해하기 위해 약간 응용한 셈플
+4. Advanced Sample Code : 실제 사용될 간단한 수준의 셈플 프로젝트
 
 ## Essential Sample Code
 > 기본부터 ..
