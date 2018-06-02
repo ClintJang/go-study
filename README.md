@@ -207,16 +207,33 @@ Hello world
 1. 콘솔에서 사용할 수 있는 간단한 커멘드라인 도구를 만들어보자
     1. flag 패키지 : 커맨드라인 플래그 인수를 쉽게 추가 할 수 있음. 활용해보자
     2. source
-        1. advanced/mycommand/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/main.go)
-        2. advanced/mycommand/[addvaluesofall.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/addvaluesofall.go)
-        3. advanced/mycommand/[configuration.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/configuration.go)
+        1. advanced/mycommand/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/main.go) : 개발 된 프로그램의 시작 설정
+        2. advanced/mycommand/[configuration.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/configuration.go) : flag 패키지의 환경설정 및 출력 설정
+        3. advanced/mycommand/[addvaluesofall.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/addvaluesofall.go) : string값을 파싱해서 더한 결과 처리
+        
 
     3. result
     ```
     > 1. 빌드해서 실행파일을 만듭니다. (폴더에 mycommand 생성)
     $ go build
 
-    > 2. 인자값 없이 실행 
+    > 2. 사용법 확인, "-h" 인자는 환경 설정된 값을 표현해주는 기본 지원되는 기능입니다.
+    $ ./mycommand -h
+    Usage of ./mycommand:
+    -age int
+            It is my age value. (default -1)
+    -isD
+            bool Set test
+    -isDeveloper
+            bool Set test (shorthand)
+    -sum value
+            comma separated list of integers, add the values of all
+    -t string
+            title is a string, it defaults to empty (shorthand)
+    -title string
+            title is a string, it default to empty
+
+    > 3. 인자값 없이 실행 
     $ ./mycommand
 
     No title is set.
@@ -228,7 +245,7 @@ Hello world
     , age is -1 means no value is set.
     The result of adding all( ) is 0.
 
-    > 3. 인자값을 주고 실행
+    > 4. 인자값을 주고 실행
     $ ./mycommand -t GoodTitle -isD -age 19 -sum 3,4,5
 
     GoodTitle
@@ -247,3 +264,6 @@ Hello world
 
 ## 기타
 > Go 언어 사용자들을 고퍼(Gopher)라고 부르며, 고퍼들을 위한 연례행사인 고퍼콘(Gophercon)이 세계 각국에서 매년 열림.
+
+## 좋은 링크 
+- http://golang.site/
