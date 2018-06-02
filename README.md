@@ -150,7 +150,30 @@ Hello world
     1. 해당폴더에 있는 main.go 를 찾아서 컴파일 합니다.
     2. 해당 폴더명으로 실행 가능한 파일을 만듭니다.
     3. 그 파일은 컴파일한 해당 OS에서 실행가능한 파일입니다.
+2. go에서 사용되는 메모리 표현중에.. ( 공부중이라 틀릴수 있는 내용입니다. )
+    - 구조체라면 메모리에 할당하는 방식과 인스턴스 형태의 방식으로 할당할 수 있습니다. 
+    - 메모리에 할당하는 방식은 포인터를 이용하여 참조 방식(by referance)으로 사용하고
+    ```go
+    // 예로 이런 형태의 선언
+    var temp *TempStruct = new(TempStruct)
+    temp2 := new(TempStruct2)
+    ```
+    - 인스턴스 라고 표현한 것은 복사 방식(by value)으로 이해하고 있고, 참조 방식으로 처리하려면 "&"를 이용해서 직접 메모리의 참조 데이터를 넘길 수도 있습니다. 초기값 설정도 가능합니다. 이 용어도 틀릴 수 있습니다.
+    ```go
+    // 예로 이런 형태의 선언
+    var temp TempStruct = TempStruct{}
+    var temp2 TempStruct2 = TempStruct2{20, 100}
+    var temp3 TempStruct3 = TempStruct2{x: 20, y: 100}
+    temp4 := TempStruct4{}
 
+    // 참조 형태로 사용할때는 
+    modify(&temp2, 30, 110)
+    fmt.Println(temp2)  // 30, 110
+
+    // 복사가 됨
+    modify(temp3, 30, 110)
+    fmt.Println(temp3) // 20, 100
+    ```
 
 # Study Sample Code
 > 헬로우 월드를 찍었으면..
