@@ -217,6 +217,7 @@ Hello world
     > 1. 빌드해서 실행파일을 만듭니다. (폴더에 mycommand 생성)
     $ go build
 
+
     > 2. 사용법 확인, "-h" 인자는 환경 설정된 값을 표현해주는 기본 지원되는 기능입니다.
     $ ./mycommand -h
     Usage of ./mycommand:
@@ -233,6 +234,7 @@ Hello world
     -title string
             title is a string, it default to empty
 
+
     > 3. 인자값 없이 실행 
     $ ./mycommand
 
@@ -244,6 +246,7 @@ Hello world
     -1
     , age is -1 means no value is set.
     The result of adding all( ) is 0.
+
 
     > 4. 인자값을 주고 실행
     $ ./mycommand -t GoodTitle -isD -age 19 -sum 3,4,5
@@ -257,7 +260,6 @@ Hello world
     , age is -1 means no value is set.
     The result of adding all( 3 4 5 ) is 12.
 
-    Jangui-MacBook-Pro:flags jangwangsu$
     ```
 
 2. 언제하지?
