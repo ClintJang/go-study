@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// 같은 표현
+	// 프로그램은 문제가 없지만, 메모리에 할당과 인스턴스로 할당 (그냥 테스트)
 	// 1.
 	// var c Configuration = Configuration{}
 	// 2.
