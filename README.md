@@ -140,6 +140,11 @@ $ ./main
 Hello world
 ```
 
+# 시작시 알아두면 좋은 팁
+1. go build
+    1. 해당폴더에 있는 main.go 를 찾아서 컴파일 합니다.
+    2. 해당 폴더명으로 실행 가능한 파일을 만듭니다.
+    3. 그 파일은 컴파일한 해당 OS에서 실행가능한 파일입니다.
 
 
 # Study Sample Code
@@ -149,52 +154,96 @@ Hello world
 ## Essential Sample Code
 > 기본부터 ..
 1. 출력부터 해볼까나..
-	- source : essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/print/fmtPrint.go)
-	- result
-```
-$ go run fmtPrint.go
+	1. source : essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/print/fmtPrint.go)
+	2. result
+    ```
+    $ go run fmtPrint.go
 
-printprintfprintln
-print-1-printf
-println
-한글
-6
-english
-日本語(にほんご)
-true
-true
-false
-false
-false
-10
-9
-10
-100
-한글english日本語(にほんご)
-한글,english,日本語(にほんご)
-경고음실행되나?
-한칸만 띄워지나?
-띄웅~
-탭      탭
-```
-2. 뭐하지..
+    printprintfprintln
+    print-1-printf
+    println
+    한글
+    6
+    english
+    日本語(にほんご)
+    true
+    true
+    false
+    false
+    false
+    10
+    9
+    10
+    100
+    한글english日本語(にほんご)
+    한글,english,日本語(にほんご)
+    경고음실행되나?
+    한칸만 띄워지나?
+    띄웅~
+    탭      탭
+    ```
+
+2. 언제하지?
 
 ## Normal Sample Code
 > 응용을 하면?
 1. http 통신을 해서 json 데이터를 가져와 볼까?
-- Test URL : http://ip.jsontest.com
-- source : normal/jsonDecoder/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/src/normal/jsonDecoder/jsonDecoderTest01.go)
-- result
-```
-{175.223.30.146}
+    1. Test URL : http://ip.jsontest.com
+    2. source : normal/jsonDecoder/[jsonDecoderTest01.go](https://github.com/ClintJang/go-study/blob/master/sample/src/normal/jsonDecoder/jsonDecoderTest01.go)
+    3. result
+    ```
+    {175.223.30.146}
 
-{
-    "ip": "175.223.30.146"
-}
-```
+    {
+        "ip": "175.223.30.146"
+    }
+    ```
+
+2. 언제하지?
 
 ## Advanced Sample Code
-> 언제하지?
+> 실제 사용할만 한것은?
+
+1. 콘솔에서 사용할 수 있는 간단한 커멘드라인 도구를 만들어보자
+    1. flag 패키지 : 커맨드라인 플래그 인수를 쉽게 추가 할 수 있음. 활용해보자
+    2. source
+        1. advanced/mycommand/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/main.go)
+        2. advanced/mycommand/[addvaluesofall.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/addvaluesofall.go)
+        3. advanced/mycommand/[configuration.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/configuration.go)
+
+    3. result
+    ```
+    > 1. 빌드해서 실행파일을 만듭니다. (폴더에 mycommand 생성)
+    $ go build
+
+    > 2. 인자값 없이 실행 
+    $ ./mycommand
+
+    No title is set.
+    Are you a developer?
+    Yes. I'm not
+
+    What is your age?
+    -1
+    , age is -1 means no value is set.
+    The result of adding all( ) is 0.
+
+    > 3. 인자값을 주고 실행
+    $ ./mycommand -t GoodTitle -isD -age 19 -sum 3,4,5
+
+    GoodTitle
+    Are you a developer?
+    Yes. I am
+
+    What is your age?
+    19
+    , age is -1 means no value is set.
+    The result of adding all( 3 4 5 ) is 12.
+
+    Jangui-MacBook-Pro:flags jangwangsu$
+    ```
+
+2. 언제하지?
 
 ## 기타
 > Go 언어 사용자들을 고퍼(Gopher)라고 부르며, 고퍼들을 위한 연례행사인 고퍼콘(Gophercon)이 세계 각국에서 매년 열림.
