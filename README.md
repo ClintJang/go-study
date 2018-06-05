@@ -238,6 +238,7 @@ Hello world
     ```
 
 2. 배열을 만들어보기, 추가로 슬라이스의 개념은?
+    > 배열 : 길이가 고정된 정적 배열<br />슬라이스 : 길이가 고정되지 않고 동적으로 늘어날 수 있는 배열
     1. source : essental/array/[arrayAndSlice.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/array/arrayAndSlice.go)
 	2. result
     ```
