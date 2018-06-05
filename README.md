@@ -184,8 +184,8 @@ Hello world
 
 ## Essential Sample Code
 > 기본부터 ..
-1. 출력부터 해볼까나..
-	1. source : essental/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/print/fmtPrint.go)
+1. 출력부터!!
+	1. source : essental/print/[fmtPrint.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/print/fmtPrint.go)
 	2. result
     ```
     $ go run fmtPrint.go
@@ -237,7 +237,52 @@ Hello world
     탭      탭
     ```
 
-2. 언제하지?
+2. 배열을 만들어보기, 추가로 슬라이스의 개념은?
+    1. source : essental/array/[arrayAndSlice.go](https://github.com/ClintJang/go-study/blob/master/sample/src/essental/array/arrayAndSlice.go)
+	2. result
+    ```
+    -----------------------------
+    --- 배열 만들어보기
+    -----------------------------
+    0, 홍길동
+    1, 임꺽정
+
+    0, 홍길동
+    1, 앤 해서웨이
+    2, 톰 크루즈
+
+    0, 임꺽정
+    1, 톰 크루즈
+
+    0, 임꺽정
+    1, 스머프
+
+    0, 임꺽정
+    1, 앤 해서웨이
+
+    [0][0], 임꺽정
+    [0][1], 앤 해서웨이
+    [1][0], 홍길동
+    [1][1], 톰 크루즈
+
+
+    -----------------------------
+    --- 슬라이스 만들어보기
+    -----------------------------
+    0, 홍길동
+    1, 임꺽정
+    >> 배열 길이는 : 2, 각각의 가능한 최대 크기는 : 3
+    0, 홍길동
+    1, 앤 해서웨이
+    2, 톰 크루즈
+    3,
+    >> 배열 길이는 : 4, 각각의 가능한 최대 크기는 : 5
+    0, 임꺽정
+    1, 톰 크루즈
+    >> 배열 길이는 : 2, 각각의 가능한 최대 크기는 : 3
+    ```
+
+3. 언제하지?
 
 ## Normal Sample Code
 > 응용을 하면?

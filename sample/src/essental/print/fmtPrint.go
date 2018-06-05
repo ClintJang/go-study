@@ -4,7 +4,7 @@ import "fmt"
 
 // Print 함수의 응용, 간격 벌리기
 func printSpacing(title string) {
-	fmt.Println("")
+	fmt.Println()
 	fmt.Println("-----------------------------")
 	fmt.Printf("--- %s\n", title)
 	fmt.Println("-----------------------------")
