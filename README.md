@@ -56,12 +56,20 @@ Go, 범용프로그래밍 언어인 Go에 대해 공부를 시작하며 만듭�
     - 쉬운 의존성 관리
     - go get, go install 등으로 쉽게 소스코드를 가져올 수 있음
     - 쉬운 패키지를 임포트, 클라우드와 같은 분산된 환경에 유리함.
-    ```go
-    import (
-        "fmt"
-        "github.com/clintjang/testutil" // 실경로는 아님
-    )
-    ```
+    - 아래는 go get 등으로 가져와서 사용하는 경우.
+        - 터미널에서 쉘명령어로 
+        ```
+        $ go get github.com/clintjang/go-study/
+        ```
+        - 그러면 아래 루트에서 필요한 패키지가 있는 경로를 지정해서 사용할 수 있음
+        ```go
+        import (
+            "fmt"
+            // 실제는 $GOPATH/src/github.com/clintjang/원하는패키지
+            "github.com/clintjang/원하는패키지" // 실경로는 아님
+        )
+        ```
+    - $GOPATH 에 프로젝트 설정으로 다양하게 사용 가능
     - 현재의 개발 트랜드는 공유된 라이브러리를 선호하죠. (물론 검증된 것을 선호하죠..)
 5. 편리한 모듈화
     - 코드 재사용성, 작은 단위의 컴퍼넌트, 패키지를 활용
@@ -146,11 +154,46 @@ Hello world
 ```
 
 # 시작시 알아두면 좋은 팁
-1. go build
+1. go env
+    1. 프로젝트에 기본이 되는 $GOPATH 에 대해 알고 시작하면 좋습니다. 
+    ```
+    $ go env
+    >> 아래와 같은 로그를 볼 수 있고, GOPATH의 설정 위치를 알 수 있습니다. 
+
+    GOARCH="amd64"
+    GOBIN=""
+    GOCACHE="/Users/clintjang/Library/Caches/go-build"
+    GOEXE=""
+    GOHOSTARCH="amd64"
+    GOHOSTOS="darwin"
+    GOOS="darwin"
+    GOPATH="/Users/clintjang/go"
+    GORACE=""
+    GOROOT="/usr/local/go"
+    GOTMPDIR=""
+    GOTOOLDIR="/usr/local/go/pkg/tool/darwin_amd64"
+    GCCGO="gccgo"
+    CC="clang"
+    CXX="clang++"
+    CGO_ENABLED="1"
+    CGO_CFLAGS="-g -O2"
+    CGO_CPPFLAGS=""
+    CGO_CXXFLAGS="-g -O2"
+    CGO_FFLAGS="-g -O2"
+    CGO_LDFLAGS="-g -O2"
+    PKG_CONFIG="pkg-config"
+    GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/zs/8q7f_x6d4zb6jsy_dpvqc5m80000gn/T/go-build886547065=/tmp/go-build -gno-record-gcc-switches -fno-common"
+    ```
+    2. 개발 소스는 $GOPATH/src/패키지폴더들/소스 형식으로 작업하면 좋은 것 같습니다.
+    3. GOPATH를 변경하려면.. 아래를 실행
+    ```
+    $ export GOPATH=/원하는경로1/원하는경로2/원하는경로3/../프로젝트명
+    ```
+2. go build
     1. 해당폴더에 있는 main.go 를 찾아서 컴파일 합니다.
     2. 해당 폴더명으로 실행 가능한 파일을 만듭니다.
     3. 그 파일은 컴파일한 해당 OS에서 실행가능한 파일입니다.
-2. go에서 사용되는 메모리 표현중에.. ( 공부중이라 틀릴수 있는 내용입니다. )
+3. go에서 사용되는 메모리 표현중에.. ( 공부중이라 틀릴수도 있어요. )
     - 구조체라면 메모리에 할당하는 방식과 인스턴스 형태의 방식으로 할당할 수 있습니다. 
     - 메모리에 할당하는 방식은 포인터를 이용하여 참조 방식(by referance)으로 사용하고
     ```go
