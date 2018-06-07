@@ -167,7 +167,7 @@ Hello world
     GOHOSTARCH="amd64"
     GOHOSTOS="darwin"
     GOOS="darwin"
-    GOPATH="/Users/clintjang/go"
+    GOPATH="/Users/clintjang/go"        << 여기!
     GORACE=""
     GOROOT="/usr/local/go"
     GOTMPDIR=""
@@ -184,7 +184,7 @@ Hello world
     PKG_CONFIG="pkg-config"
     GOGCCFLAGS="-fPIC -m64 -pthread -fno-caret-diagnostics -Qunused-arguments -fmessage-length=0 -fdebug-prefix-map=/var/folders/zs/8q7f_x6d4zb6jsy_dpvqc5m80000gn/T/go-build886547065=/tmp/go-build -gno-record-gcc-switches -fno-common"
     ```
-    2. 개발 소스는 $GOPATH/src/패키지폴더들/소스 형식으로 작업하면 좋은 것 같습니다.
+    2. 개발 소스는 "$GOPATH/src/작업패키지폴더들/작업소스" 위치에서 작업하면 좋은 것 같습니다.
     3. GOPATH를 변경하려면.. 아래를 실행
     ```
     $ export GOPATH=/원하는경로1/원하는경로2/원하는경로3/../프로젝트명
