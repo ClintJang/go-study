@@ -374,8 +374,19 @@ Hello world
 	```
 
 	... if 문을 많이 써야 되는 부분이 아쉽네요. 
-    
-3. 언제하지? 시간이 되면 셈플을 추가해보자~
+ 
+3. 초간단 HTTP 서버
+	1. source : normal/httpServer/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/normal/httpServer/main.go)
+	2. result : httpServer 폴더에서 main.go를 run합니다.
+	```
+    fileAndDir $ go run main.go
+    _
+    (커서 대기중, 이제 웹 브라우저에 "localhost:9999" 를 쳐보세요)
+    ```
+	3. 간단한 서버가 실행됬습니다. (Http Server를 닫으려면 control + c)
+	4. 서버 실행 : http://localhost:9999
+	<img width="444" height="166" src="/Image/normalHttpServer00.png">
+4. 언제하지? 시간이 되면 셈플을 추가해보자~
 
 ## Advanced Sample Code
 > 실제 사용할만 한것은?
