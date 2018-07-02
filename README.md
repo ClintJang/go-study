@@ -379,7 +379,7 @@ Hello world
 	1. source : normal/httpServer/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/normal/httpServer/main.go)
 	2. result : httpServer 폴더에서 main.go를 run합니다.
 	```
-    fileAndDir $ go run main.go
+    httpServer $ go run main.go
     _
     (커서 대기중, 이제 웹 브라우저에 "localhost:9999" 를 쳐보세요)
     ```
