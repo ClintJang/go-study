@@ -151,7 +151,7 @@ func testFile() error {
 }
 
 func main() {
-	print("폴더 : makeDirFolder01, 02 는 지우세요. \n파일 : testFileMake02.txt 도 지우세요.\n\n")
+	print("폴더 : makeDirFolder01, 02 는 실행전에 지우세요. \n파일 : testFileMake02.txt 도 실행전에 지우세요.\n\n")
 	// 테스트를 위해만들어진 폴더를 지우고 시작한다.
 	if err := initFileAndFolder(); err != nil {
 		println("에러가 나도 종료하지 않습니다.\n폴더가 없을 수 있으니깐요.. \n이 프로그램은 공부용 테스트 프로그램이에요.\n처음만 발생합니다.\nerr:%s", err)
@@ -172,5 +172,6 @@ func main() {
 		panic(err)
 	}
 
+	println()
 	println("만들어진 폴더와 파일을 확인해보세요~ ")
 }

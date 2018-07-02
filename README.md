@@ -326,7 +326,7 @@ Hello world
     >> 배열 길이는 : 2, 각각의 가능한 최대 크기는 : 3
     ```
 
-3. 언제하지?
+3. 언제하지? 시간이 되면 셈플을 추가해보자~
 
 ## Normal Sample Code
 > 응용을 하면?
@@ -341,8 +341,41 @@ Hello world
         "ip": "175.223.30.146"
     }
     ```
+2. 파일 입출력 
+	> 파일과 폴더를 만들고 지워보자, 만들어진 파일에 문자열을 쓰거나 파일 내용을 복사해보자.
+	
+	1. source : normal/fileAndDir/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/normal/fileAndDir/main.go)
+	2. result : fileAndDir 폴더에서 main.go를 run합니다.
+	```
+    fileAndDir $ go run main.go
+    
+	폴더 : makeDirFolder01, 02 는 실행전에 지우세요.
+    파일 : testFileMake02.txt 도 실행전에 지우세요.
 
-2. 언제하지?
+    hello world 01
+
+    만들어진 폴더와 파일을 확인해보세요~
+    ```
+    그리고 폴더와 파일을 지우고 다시 실행하면..
+    ```
+    fileAndDir $ go run main.go
+    
+    폴더 : makeDirFolder01, 02 는 실행전에 지우세요.
+    파일 : testFileMake02.txt 도 실행전에 지우세요.
+
+    에러가 나도 종료하지 않습니다.
+    폴더가 없을 수 있으니깐요..
+    이 프로그램은 공부용 테스트 프로그램이에요.
+    처음만 발생합니다.
+    err:%s (0x109fbe0,0xc42008e1e0)
+    hello world 01
+
+    만들어진 폴더와 파일을 확인해보세요~
+	```
+
+	... if 문을 많이 써야 되는 부분이 아쉽네요. 
+    
+3. 언제하지? 시간이 되면 셈플을 추가해보자~
 
 ## Advanced Sample Code
 > 실제 사용할만 한것은?
@@ -353,9 +386,9 @@ Hello world
         1. advanced/mycommand/[main.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/main.go) : 개발 된 프로그램의 시작 설정
         2. advanced/mycommand/[configuration.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/configuration.go) : flag 패키지의 환경설정 및 출력 설정
         3. advanced/mycommand/[addvaluesofall.go](https://github.com/ClintJang/go-study/blob/master/sample/src/advanced/mycommand/addvaluesofall.go) : string값을 파싱해서 더한 결과 처리
-        
 
     3. result
+    
     ```
     > 1. 빌드해서 실행파일을 만듭니다. (폴더에 mycommand 생성)
     $ go build
@@ -405,7 +438,7 @@ Hello world
 
     ```
 
-2. 언제하지?
+2. 언제하지? 시간이 되면 셈플을 추가해보자~
 
 ## 기타
 > Go 언어 사용자들을 고퍼(Gopher)라고 부르며, 고퍼들을 위한 연례행사인 고퍼콘(Gophercon)이 세계 각국에서 매년 열림.
